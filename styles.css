@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  min-width: 375px;
+}
+:is(h2, h3, h4, h5) {
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+}
+button {
+  cursor: pointer;
+}
+/* form */
+.search-form {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.search-bar {
+  text-indent: 5px;
+  padding: 0.5rem;
+  border-radius: 0.4rem 0 0 0.4rem;
+  border: 1px solid #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.search-form button {
+  border-radius: 0 0.4rem 0.4rem 0;
+  background: saddlebrown;
+  color: #fff;
+  border: 1px solid saddlebrown;
+  padding: 0.45rem;
+  transition: 0.3s ease;
+}
+.search-form button i {
+  color: #aaa;
+}
+.search-form button:hover {
+  color: saddlebrown;
+  background: #fff;
+  border-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+/* result */
+.result {
+  width: 80%;
+  margin: auto;
+}
+/* error */
+:is(section > h3, .error) {
+  text-transform: lowercase;
+  text-align: center;
+  line-height: 1.2;
+  margin: 1rem 0;
+}
+.word {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.audio-btn {
+  background: transparent;
+  border: transparent;
+}
+audio {
+  display: none;
+}
+.meanings {
+  display: grid;
+  gap: 1rem;
+  padding: 0.7rem 0;
+}
+.meanings li {
+  margin: 0.6rem 0.4rem 0.4rem;
+}
+p.example {
+  padding: 0 0.7rem;
+  font-style: italic;
+}
+p.words {
+  display: flex;
+  flex-direction: row;
+  gap: 0.2em;
+  flex-wrap: wrap;
+}
+/* footer */
+footer p {
+  background: #ddd;
+  padding: 0.6rem 0.3rem;
+  text-align: center;
+}
+footer p > a {
+  color: saddlebrown;
+}

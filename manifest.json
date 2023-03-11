@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "Dictionary",
+    "description": "Get dictionary meaning of words.",
+    "version": "1.0",
+    "action": {
+        "default_popup": "index.html"
+    },
+    "permissions":[
+        "clipboardRead"
+    ]   
+}
